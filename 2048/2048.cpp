@@ -21,13 +21,13 @@ void init(){
     }
     memset(p,0,sizeof(p));
     random_shuffle(s.begin(),s.end());
-    p[s[0].first][s[0].second]=1;
+    p[s[0].first][s[0].second]=2;
 }
 
 void reset(){
     memset(p,0,sizeof(p));
     random_shuffle(s.begin(),s.end());
-    p[s[0].first][s[0].second]=1;
+    p[s[0].first][s[0].second]=2;
 }
 
 void print_now(){
@@ -180,7 +180,7 @@ bool add_one(){
     random_shuffle(s.begin(),s.end());
     for(int i=0;i<s.size();i++){
         if(p[s[i].first][s[i].second]==0){
-            p[s[i].first][s[i].second]=1;
+            p[s[i].first][s[i].second]=2;
             return true;
         }
     }
