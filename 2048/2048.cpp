@@ -197,15 +197,31 @@ int main(int argc,char *argv[]){
     while(input!='\x1b'){
         print_now();
         input=getch();
-        switch (input){
-            case '0': reset();break;
-            case '2': shift_down();break;
-            case '4': shift_left();break;
-            case '6': shift_right();break;
-            case '8': shift_up();break;
-            case '\x1b': break;
-            default: cout << "Invalid input" << endl; input=1; break;
-        }
+        if(input==-32){
+        	input=getch();
+        	switch (input){
+        		case 80: shift_down();break;
+	            case 75: shift_left();break;
+	            case 77: shift_right();break;
+	            case 72: shift_up();break; 
+			}
+			if(!add_one()){
+                cout << "you can't not move anymore" << endl;
+                cout << "enter 0 to reset " << endl;
+            }
+		}
+		else{
+			printf("%d\n",input);
+	        switch (input){
+	            case '0': reset();break;
+	            case '2': shift_down();break;
+	            case '4': shift_left();break;
+	            case '6': shift_right();break;
+	            case '8': shift_up();break;
+	            case '\x1b': break;
+	            default: cout << "Invalid input" << endl; input=1; break;
+	        }
+		}
         if(input=='\x1b'){
             break;
         }
