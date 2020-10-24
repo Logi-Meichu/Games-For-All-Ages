@@ -143,6 +143,12 @@ void init_keyCode() {
     keyCode[70] = LogiLed::KeyName::F10;
     keyCode[71] = LogiLed::KeyName::F11;
     keyCode[72] = LogiLed::KeyName::F12;
+
+    keyCode[73] = LogiLed::KeyName::LEFT_ALT;
+    keyCode[74] = LogiLed::KeyName::SPACE;
+    keyCode[75] = LogiLed::KeyName::RIGHT_ALT;
+
+    keyCode[99] = LogiLed::KeyName::ESC;
 }
 
 bool LogitechGame_init() {
