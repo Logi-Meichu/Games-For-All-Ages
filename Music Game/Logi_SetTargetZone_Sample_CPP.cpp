@@ -56,17 +56,26 @@ void next_frame() {
         obstacle.push_back(0);
 }
 
-void draw() {
+void draw(int leg) {
     int i;
     if (!dinosaur_jump) {
         std::cout << "0000000000" << std::endl;
         std::cout << "0020000000" << std::endl;
-
+        keyLightByN(1, 0, 0, 255);
+        keyLightByN(2, 0, 0, 255);
+        keyLightByN(3, 0, 0, 255);
+        keyLightByN(4, 0, 0, 255);
+        keyLightByN(5, 0, 0, 255);
+        keyLightByN(6, 0, 0, 255);
+        keyLightByN(7, 0, 0, 255);
+        keyLightByN(8, 0, 0, 255);
+        keyLightByN(9, 0, 0, 255);
+        keyLightByN(0, 0, 0, 255);
         keyLightByN(36, 0, 0, 255);
         keyLightByN(42, 0, 0, 255);
-        keyLightByN(24, 0, 0, 255);
-        keyLightByN(37, 0, 0, 255);
-        keyLightByN(39, 0, 0, 255);
+        leg ? keyLightByN(24, 255, 0, 0) : keyLightByN(24, 0, 0, 255);
+        keyLightByN(37, 255, 0, 0);
+        !leg ? keyLightByN(39, 255, 0, 0) : keyLightByN(39, 0, 0, 255);
         keyLightByN(44, 0, 0, 255);
         keyLightByN(40, 0, 0, 255);
         keyLightByN(28, 0, 0, 255);
@@ -81,11 +90,12 @@ void draw() {
         keyLightByN(29, 0, 0, 255);
         keyLightByN(30, 0, 0, 255);
         keyLightByN(31, 0, 0, 255);
-        keyLightByN(';', 0, 0, 255);
+        keyLightByN(55, 0, 0, 255);
         std::cout << obstacle[0] << obstacle[1] << "2";
         obstacle[0] ? keyLightByN(45, 0, 255, 0) : keyLightByN(45, 0, 0, 255);
-        obstacle[1] ? keyLightByN(43, 0, 255, 0) : keyLightByN(43, 0, 0, 255);
-        keyLightByN(22, 255, 0, 0);
+        //obstacle[1] ? keyLightByN(43, 0, 255, 0) : keyLightByN(43, 0, 0, 255);
+        !leg ? keyLightByN(43, 255, 0, 0) : obstacle[1] ? keyLightByN(43, 0, 255, 0) : keyLightByN(43, 0, 0, 255);
+        leg ? keyLightByN(22, 255, 0, 0) : obstacle[2] ? keyLightByN(22, 0, 255 , 0) : keyLightByN(22, 0, 0, 255);
         obstacle[3] ? keyLightByN(41, 0, 255, 0) : keyLightByN(41, 0, 0, 255);
         obstacle[4] ? keyLightByN(21, 0, 255, 0) : keyLightByN(21, 0, 0, 255);
         obstacle[5] ? keyLightByN(33, 0, 255, 0) : keyLightByN(33, 0, 0, 255);
@@ -100,6 +110,16 @@ void draw() {
     else {
         std::cout << "0020000000" << std::endl;
         std::cout << "0020000000" << std::endl;
+        keyLightByN(1, 0, 0, 255);
+        keyLightByN(2, 0, 0, 255);
+        keyLightByN(3, 255, 0, 0);
+        keyLightByN(4, 255, 0, 0);
+        keyLightByN(5, 0, 0, 255);
+        keyLightByN(6, 0, 0, 255);
+        keyLightByN(7, 0, 0, 255);
+        keyLightByN(8, 0, 0, 255);
+        keyLightByN(9, 0, 0, 255);
+        keyLightByN(0, 0, 0, 255);
         keyLightByN(36, 0, 0, 255);
         keyLightByN(42, 0, 0, 255);
         keyLightByN(24, 255, 0, 0);
@@ -119,7 +139,7 @@ void draw() {
         keyLightByN(29, 0, 0, 255);
         keyLightByN(30, 0, 0, 255);
         keyLightByN(31, 0, 0, 255);
-        keyLightByN(';', 0, 0, 255);
+        keyLightByN(55, 0, 0, 255);
         obstacle[0] ? keyLightByN(45, 0, 255, 0) : keyLightByN(45, 0, 0, 255);
         obstacle[1] ? keyLightByN(43, 0, 255, 0) : keyLightByN(43, 0, 0, 255);
         obstacle[2] ? keyLightByN(22, 0, 255, 0) : keyLightByN(22, 0, 0, 255);
@@ -149,25 +169,33 @@ void GetKeyPress()
 }
 
 int din_main() {
+    start:
     LogitechGame_init();
     std::thread t(GetKeyPress);
     din_init();
-    int i, die = 0;
+    int i, die = 0, leg=0;
     while (!die) {
-        draw();
+        draw(leg);
         if (dinosaur_jump == 0 && obstacle[2] == 1)
             die = 1;
+        if (!leg) leg = 1;
+        else leg = 0;
         dinosaur_jump = 0;
         std::cout << std::endl;
         next_frame();
         Sleep(500);
     }
     t.detach();
-    std::cout << "Game Over" << std::endl;
-    for (i = 20; i < 60; i++) {
+    for (i = 0; i < 60; i++) {
         keyLightByN(i, 255, 0, 0);
     }
-    return 0;
+    std::cout << "Game Over" << std::endl;
+    char c;
+    while (c = getchar()) {
+        if (c == 'r')
+            goto start;
+        else return 0;
+    };
 }
 
 void init() {
