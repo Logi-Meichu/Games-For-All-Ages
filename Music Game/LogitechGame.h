@@ -24,5 +24,8 @@ int flashStopByC(char& c);
 
 // end function
 bool LogitechGame_close();
+<<<<<<< HEAD:Music Game/LogitechGame.h
 
 #endif
+=======
+>>>>>>> 85635b9734b58b4e9109f9c86e11336f77cded80:LogitechGame.h

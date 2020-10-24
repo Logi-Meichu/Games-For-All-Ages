@@ -1,12 +1,14 @@
 #include "stdafx.h"
 #include "LogitechLEDLib.h"
+<<<<<<< HEAD:Music Game/LogitechGame.cpp
 #include "LogitechGame.h"
 #include <conio.h>
+=======
+#include "LogitechGame.cpp"
+>>>>>>> 85635b9734b58b4e9109f9c86e11336f77cded80:LogitechGame.cpp
 
 #include <map>
 #include <string.h>
-#include <time.h>
-
 using namespace std;
 
 std::map<char, LogiLed::KeyName> keymap;
