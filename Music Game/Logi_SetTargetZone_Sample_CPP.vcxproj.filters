@@ -35,8 +35,5 @@
     <ClCompile Include="Logi_SetTargetZone_Sample_CPP.cpp">
       <Filter>Resource Files\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LogitechGame.cpp">
-      <Filter>Resource Files\Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

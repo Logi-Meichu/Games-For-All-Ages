@@ -16,7 +16,7 @@
 #include <ctime>
 #include <thread>
 #include <string.h>
-#include <time.h>
+//#include <time.h>
 #pragma comment(lib, "Winmm.lib")
 
 // music
@@ -50,7 +50,7 @@ void next_frame() {
     obstacle.erase(obstacle.begin(), obstacle.begin() + 1);
     srand((unsigned)time(NULL));
     int random = rand() % 10;
-    if (random <= 2)
+    if (random <= 2 && obstacle.back()!=1)
         obstacle.push_back(1);
     else
         obstacle.push_back(0);
@@ -160,10 +160,13 @@ int din_main() {
         dinosaur_jump = 0;
         std::cout << std::endl;
         next_frame();
-        Sleep(1000);
+        Sleep(500);
     }
     t.detach();
     std::cout << "Game Over" << std::endl;
+    for (i = 20; i < 60; i++) {
+        keyLightByN(i, 255, 0, 0);
+    }
     return 0;
 }
 
