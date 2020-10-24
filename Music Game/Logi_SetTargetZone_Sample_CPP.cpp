@@ -43,6 +43,7 @@ void random_color() {
     int arr[26] = { 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
                     30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
                     40, 41, 42, 43, 44, 45};
+    int key[26][3];
     std::random_shuffle(arr, arr+26);
     for (int i = 0; i < 26; i=i+2) {
         int cc = rand() % 10;
@@ -51,11 +52,39 @@ void random_color() {
         b = bb[cc];
         std::cout << r << " " << g << " " << b  << " " << arr[i] << " & " << arr[i+1] << std::endl;
         keyLightByN(arr[i], r, g, b);
-        
+        key[arr[i] - 20][0] = r;
+        key[arr[i] - 20][1] = g;
+        key[arr[i+1]-20][2] = b;
         keyLightByN(arr[i + 1], r, g, b);
+        key[arr[i + 1] - 20][0] = r;
+        key[arr[i + 1] - 20][1] = g;
+        key[arr[i + 1] - 20][2] = b;
+        std::cout << key[arr[i] - 20][0] << " " << key[arr[i] - 20][1] << key[arr[i] - 20][2] << std::endl;
+        std::cout << key[arr[i + 1] - 20][0] << " " << key[arr[i + 1] - 20][1] << key[arr[i + 1] - 20][2] << std::endl;
+    }
+    Sleep(3000);
+    LogiLedSetLighting(0, 0, 0);
+    char input1 = _getch();
+    input1 = (tolower(input1));
+    int ina = input1 - 'a';
+    int inaa = ina + 20;
+    keyLightByN(inaa, key[ina][0], key[ina][1], key[ina][2]);
+    char input2 = _getch();
+    input2 = (tolower(input2));
+    int inb = input2 - 'a';
+    int inbb = inb + 20;
+    keyLightByN(inbb, key[inb][0], key[inb][1], key[inb][2]);
+    std::cout << (int)ina << std::endl << (int)inb << std::endl;
+    if (key[ina][0] == key[inb][0] && key[ina][1] == key[inb][1] && key[ina][2] == key[inb][2]) {
+        std::cout << "it's same." << std::endl;
+    }
+    else {
+        Sleep(1000);
+        keyLightByN(inaa, 0, 0, 0);
+        keyLightByN(inbb, 0, 0, 0);
+        std::cout << "it's different." << std::endl;
     }
 }
-
 
 
 bool is_word(char c) {
@@ -65,7 +94,7 @@ bool is_word(char c) {
 bool c_is_same(char a, char b) {
     return(a == b);
 }
-
+/*
 void readinput() {
     char input, temp1 = ' ', temp2 = ' ';
     input = _getch();
@@ -83,7 +112,7 @@ void readinput() {
         printf("it's different.\n");
     }
 }
-
+*/
 
 void Play_Music(std::string Music) {
     std::wstring stemp = std::wstring(Music.begin(), Music.end());
