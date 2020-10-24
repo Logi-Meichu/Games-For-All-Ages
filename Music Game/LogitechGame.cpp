@@ -1,21 +1,17 @@
 #include "stdafx.h"
 #include "LogitechLEDLib.h"
-<<<<<<< HEAD:Music Game/LogitechGame.cpp
+
 #include "LogitechGame.h"
 #include <conio.h>
-=======
-#include "LogitechGame.cpp"
->>>>>>> 85635b9734b58b4e9109f9c86e11336f77cded80:LogitechGame.cpp
-
 #include <map>
 #include <string.h>
-using namespace std;
+#include <iostream>
+//using namespace std;
 
-std::map<char, LogiLed::KeyName> keymap;
-std::map<int, LogiLed::KeyName> keyCode;
+std::unordered_map<char, LogiLed::KeyName> keymap;
+std::unordered_map<int, LogiLed::KeyName> keyCode;
 
 void init_keymap() {
-    keymap.clear();
 
     keymap['a'] = LogiLed::KeyName::A;
     keymap['b'] = LogiLed::KeyName::B;
@@ -69,7 +65,6 @@ void init_keymap() {
 }
 
 void init_keyCode() {
-    keyCode.clear();
 
     keyCode[0] = LogiLed::KeyName::ZERO;
     keyCode[1] = LogiLed::KeyName::ONE;
@@ -154,7 +149,7 @@ bool LogitechGame_init() {
     bool LedInitialized = LogiLedInitWithName("SetTargetZone Sample C++");
     
     if (!LedInitialized) {
-        cout << "Starting failed." << '\n';
+        std::cout << "Starting failed." << '\n';
         return 1;
     }
 

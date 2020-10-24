@@ -38,8 +38,5 @@
     <ClCompile Include="Logi_SetTargetZone_Sample_CPP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Find Color\Find_Color.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
