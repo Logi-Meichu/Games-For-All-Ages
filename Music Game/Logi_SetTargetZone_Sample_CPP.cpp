@@ -9,6 +9,9 @@
 
 #include <unordered_map>
 #include <queue>
+#include <tuple>
+#include <algorithm>
+#include "LogitechGame.h"
 
 #include <string.h>
 #include <time.h>
@@ -18,44 +21,108 @@
 #include <windows.h>
 #include <mmsystem.h>
 
-std::unordered_map<char, LogiLed::KeyName> keymap;
+
+
 double rank = 0.0, hit = 0.0, total = 0.0;
 
-void init_keymap() {
-    keymap.clear();
+/*
+int n_color[9], difficulty;
+std::tuple<int, int, int> colors(int id);
 
-    keymap['a'] = LogiLed::KeyName::A;
-    keymap['b'] = LogiLed::KeyName::B;
-    keymap['c'] = LogiLed::KeyName::C;
-    keymap['d'] = LogiLed::KeyName::D;
-    keymap['e'] = LogiLed::KeyName::E;
-    keymap['f'] = LogiLed::KeyName::F;
-    keymap['g'] = LogiLed::KeyName::G;
-    keymap['h'] = LogiLed::KeyName::H;
-    keymap['i'] = LogiLed::KeyName::I;
-    keymap['j'] = LogiLed::KeyName::J;
-    keymap['k'] = LogiLed::KeyName::K;
-    keymap['l'] = LogiLed::KeyName::L;
-    keymap['m'] = LogiLed::KeyName::M;
-    keymap['n'] = LogiLed::KeyName::N;
-    keymap['o'] = LogiLed::KeyName::O;
-    keymap['p'] = LogiLed::KeyName::P;
-    keymap['q'] = LogiLed::KeyName::Q;
-    keymap['r'] = LogiLed::KeyName::R;
-    keymap['s'] = LogiLed::KeyName::S;
-    keymap['t'] = LogiLed::KeyName::T;
-    keymap['u'] = LogiLed::KeyName::U;
-    keymap['v'] = LogiLed::KeyName::V;
-    keymap['w'] = LogiLed::KeyName::W;
-    keymap['x'] = LogiLed::KeyName::X;
-    keymap['y'] = LogiLed::KeyName::Y;
-    keymap['z'] = LogiLed::KeyName::Z;
-
+bool valid_num(char c) {
+    return (c <= '9' && c >= '1');
 }
+
+void init() {
+    for (int i = 0; i < 9; i++) {
+        n_color[i] = (i + 1) * 2;
+    }
+    std::make_tuple(100, 0, 0) = colors(0);
+    std::make_tuple(0, 100, 0) = colors(1);
+    std::make_tuple(0, 0, 100) = colors(2);
+    std::make_tuple(100, 100, 0) = colors(3);
+    std::make_tuple(100, 0, 100) = colors(4);
+    std::make_tuple(0, 100, 100) = colors(5);
+    std::make_tuple(100, 100, 100) = colors(6);
+    std::make_tuple(50, 50, 100) = colors(7);
+    std::make_tuple(100, 50, 50) = colors(8);
+}
+
+void select_level() {
+    char input;
+    init();
+    while (input = _getch()) {
+        if (valid_num(input)) {
+            difficulty = (int)input - '1';
+            random_color(n_color[difficulty]);
+            return;
+        }
+    }
+}
+*/
+
+int n_color[9], difficulty;
+int rr[10] = { 100, 0, 0, 100, 100, 0, 100, 50, 100, 50 };
+int gg[10] = { 0, 100, 0, 100, 0, 100, 100, 50, 50, 100 };
+int bb[10] = { 0, 0, 100, 0, 100, 100, 100, 100, 50, 50 };
+
+void init() {
+    for (int i = 0; i < 9; i++) {
+        n_color[i] = (i + 1) * 2;
+    }
+}
+void random_color() {
+    srand(time(NULL));
+    int r, g, b;
+    int arr[26] = { 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+                    30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+                    40, 41, 42, 43, 44, 45};
+    
+    std::random_shuffle(arr, arr+26);
+    //for (int i = 0; i < 26; i++) {
+    //    std::cout << arr[i] << std::endl;
+    //}
+    for (int i = 0; i < 26; i=i+2) {
+        int cc = rand() % 10;
+        //std::cout << cc << std::endl;
+        r = rr[cc];
+        g = gg[cc];
+        b = bb[cc];
+        //std::tie(r,g,b) = colors[color];
+        std::cout << r << " " << g << " " << b  << " " << arr[i] << " & " << arr[i+1] << std::endl;
+        keyLightByN(arr[i], r, g, b);
+        keyLightByN(arr[i + 1], r, g, b);
+    }
+}
+
+
 
 bool is_word(char c) {
     return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9');
 }
+
+bool c_is_same(char a, char b) {
+    return(a == b);
+}
+
+void readinput() {
+    char input, temp1 = ' ', temp2 = ' ';
+    input = _getch();
+    if (is_word(input)) {
+        temp1 = input;
+    }
+    input = _getch();
+    if (is_word(input)) {
+        temp2 = input;
+    }
+    if (c_is_same(temp1, temp2)) {
+        printf("it's same.\n");
+    }
+    else {
+        printf("it's different.\n");
+    }
+}
+
 
 void Play_Music(std::string Music) {
     std::wstring stemp = std::wstring(Music.begin(), Music.end());
@@ -195,6 +262,8 @@ int _tmain(int argc, _TCHAR* argv[])
     // Set all devices to Black
     LogiLedSetLighting(0, 0, 0);
 
+    //readinput();
+    random_color();
 
     //Create_Beats("cytus");
     //Beats_Lighting("cytus");
