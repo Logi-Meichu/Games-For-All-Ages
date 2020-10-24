@@ -197,11 +197,11 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
     //Create_Beats("cytus");
-    Beats_Lighting("cytus");
-    rank = hit / total;
-    printf("hit: %lf%%\n", rank*100);
-    Show_Rank(rank);
-    Over_Lighting_Effect(rank, 255, 0, 0, game_over_led_time_ms, game_over_led_flash_delay);
+    //Beats_Lighting("cytus");
+    //rank = hit / total;
+    //printf("hit: %lf%%\n", rank*100);
+    //Show_Rank(rank);
+    //Over_Lighting_Effect(rank, 255, 0, 0, game_over_led_time_ms, game_over_led_flash_delay);
     
     std::cout << "Press \"ENTER\" to continue...";
     std::cin.ignore();
