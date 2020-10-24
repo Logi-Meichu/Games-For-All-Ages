@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 #include <conio.h>
 #include <windows.h>
+#include "LogitechGame.h"
 
 using namespace std;
 
@@ -21,6 +22,21 @@ void print_table(){
             cout << p[i][j] << " ";
         }
         cout << endl;
+    }
+    int co=10;
+    for(i=2;i>=0;i++){
+        for(j=0;j<3;j++){
+            co++;
+            if(p[i][j]==0){
+                keyLightByN(co,255,255,255);    
+            }
+            else if(p[i][j]==1){
+                keyLightByN(co,255,0,0);
+            }
+            else if(p[i][j]==2){
+                keyLightByN(co,0,0,255);
+            }
+        }
     }
 }
 
@@ -65,6 +81,7 @@ bool check_result(){
 
 int main(){
     init();
+    LogitechGame_init();
     char input;
     bool has_result=false;
     check_result();
@@ -132,5 +149,6 @@ int main(){
         
         
     }
+    LogitechGame_close();
     return 0;
 }
