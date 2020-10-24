@@ -1,0 +1,34 @@
+﻿  Logi_SetTargetZone_Sample_CPP.cpp
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(137,9): warning C4101: 'i': 未參考的區域變數
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(35,6): error C2084: 函式 'void init(void)' 的主體已經被宣告了
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(15): message : 請參閱 'init' 之前的定義
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(41,15): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(54,36): error C2668: 'keyLightByN': 模稜兩可的呼叫多載函式
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\LogitechGame.h(16,5): message : 可能是 'int keyLightByN(int &,int,int,int)'
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 或       'int keyLightByN(int,int,int,int)'
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(54,36): message : 當嘗試符合引數清單 '(int, int, int, int)' 時
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(58,40): error C2668: 'keyLightByN': 模稜兩可的呼叫多載函式
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\LogitechGame.h(16,5): message : 可能是 'int keyLightByN(int &,int,int,int)'
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 或       'int keyLightByN(int,int,int,int)'
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(58,40): message : 當嘗試符合引數清單 '(int, int, int, int)' 時
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(73,64): error C2668: 'keyLightByN': 模稜兩可的呼叫多載函式
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\LogitechGame.h(16,5): message : 可能是 'int keyLightByN(int &,int,int,int)'
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 或       'int keyLightByN(int,int,int,int)'
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(73,64): message : 當嘗試符合引數清單 '(int, int, int, int)' 時
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(78,64): error C2668: 'keyLightByN': 模稜兩可的呼叫多載函式
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\LogitechGame.h(16,5): message : 可能是 'int keyLightByN(int &,int,int,int)'
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 或       'int keyLightByN(int,int,int,int)'
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(78,64): message : 當嘗試符合引數清單 '(int, int, int, int)' 時
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(85,38): error C2668: 'keyLightByN': 模稜兩可的呼叫多載函式
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\LogitechGame.h(16,5): message : 可能是 'int keyLightByN(int &,int,int,int)'
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 或       'int keyLightByN(int,int,int,int)'
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(85,38): message : 當嘗試符合引數清單 '(int, int, int, int)' 時
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(86,38): error C2668: 'keyLightByN': 模稜兩可的呼叫多載函式
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\LogitechGame.h(16,5): message : 可能是 'int keyLightByN(int &,int,int,int)'
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 或       'int keyLightByN(int,int,int,int)'
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(86,38): message : 當嘗試符合引數清單 '(int, int, int, int)' 時
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(169,83): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(175,21): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(181,26): warning C4244: '引數': 將 'double' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(206,17): warning C4244: '引數': 將 'float' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失
+C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(232,23): warning C4244: '引數': 將 'float' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失

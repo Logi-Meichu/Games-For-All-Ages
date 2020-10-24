@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "LogitechLEDLib.h"
 
-#include "LogitechGame.h"
+// #include "LogitechGame.h"
 #include <conio.h>
 #include <map>
 #include <string.h>
@@ -164,7 +164,7 @@ bool LogitechGame_init() {
     return 0;
 }
 
-int keyLightByC(char& c, int r = 0, int g = 0, int b = 0) {
+int keyLightByC(char c, int r = 0, int g = 0, int b = 0) {
     char cc = tolower(c);
     if (keymap.find(cc) == keymap.end()) return 1; // out of range
 
@@ -177,7 +177,7 @@ int keyLightByC(char& c, int r = 0, int g = 0, int b = 0) {
     return 0;
 }
 
-int keyLightByN(int& n, int r = 0, int g = 0, int b = 0) {
+int keyLightByN(int n, int r = 0, int g = 0, int b = 0) {
     if (keyCode.find(n) == keyCode.end()) return 1; // out of range
 
     r = r*100 / 255;
@@ -189,7 +189,7 @@ int keyLightByN(int& n, int r = 0, int g = 0, int b = 0) {
     return 0;
 }
 
-int flashLightByC(char& c, int r = 0, int g = 0, int b = 0, int t = 200) {
+int flashLightByC(char c, int r = 0, int g = 0, int b = 0, int t = 200) {
     if (keymap.find(c) == keymap.end()) return 1;  // out of range
 
     r = r*100 / 255;
@@ -201,7 +201,7 @@ int flashLightByC(char& c, int r = 0, int g = 0, int b = 0, int t = 200) {
     return 0;
 }
 
-int flashLightByN(int& n, int r = 0, int g = 0, int b = 0, int t = 200) {
+int flashLightByN(int n, int r = 0, int g = 0, int b = 0, int t = 200) {
     if (keyCode.find(n) == keyCode.end()) return 1; // out of range
 
     r = r*100 / 255;
@@ -215,7 +215,7 @@ int flashLightByN(int& n, int r = 0, int g = 0, int b = 0, int t = 200) {
 
 // bool LogiLedStopEffectsOnKey(LogiLed::KeyName keyName);
 
-int flashStopByC(char& c) {
+int flashStopByC(char c) {
     if (keymap.find(c) == keymap.end()) return 1;  // out of range
 
     LogiLedStopEffectsOnKey(keymap[c]);
@@ -223,7 +223,7 @@ int flashStopByC(char& c) {
     return 0;
 }
 
-int flashStopByN(int& n) {
+int flashStopByN(int n) {
     if (keyCode.find(n) == keyCode.end()) return 1; // out of range
 
     LogiLedStopEffectsOnKey(keyCode[n]);

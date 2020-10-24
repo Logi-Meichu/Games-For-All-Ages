@@ -11,7 +11,7 @@
 #include <queue>
 #include <tuple>
 #include <algorithm>
-#include "LogitechGame.h"
+#include "LogitechGame.cpp"
 
 #include <string.h>
 #include <time.h>
@@ -20,7 +20,7 @@
 // music
 #include <windows.h>
 #include <mmsystem.h>
-#include "dinosaur.cpp"
+// #include "dinosaur.cpp"
 
 
 double rank = 0.0, hit = 0.0, total = 0.0;
@@ -49,40 +49,43 @@ void random_color() {
         int cc = rand() % 10;
         r = rr[cc];
         g = gg[cc];
-        b = bb[cc];
-        std::cout << r << " " << g << " " << b  << " " << arr[i] << " & " << arr[i+1] << std::endl;
+        b = bb[cc]; 
         keyLightByN(arr[i], r, g, b);
         key[arr[i] - 20][0] = r;
         key[arr[i] - 20][1] = g;
-        key[arr[i+1]-20][2] = b;
+        key[arr[i]-20][2] = b;
         keyLightByN(arr[i + 1], r, g, b);
         key[arr[i + 1] - 20][0] = r;
         key[arr[i + 1] - 20][1] = g;
         key[arr[i + 1] - 20][2] = b;
-        std::cout << key[arr[i] - 20][0] << " " << key[arr[i] - 20][1] << key[arr[i] - 20][2] << std::endl;
-        std::cout << key[arr[i + 1] - 20][0] << " " << key[arr[i + 1] - 20][1] << key[arr[i + 1] - 20][2] << std::endl;
     }
     Sleep(3000);
     LogiLedSetLighting(0, 0, 0);
-    char input1 = _getch();
-    input1 = (tolower(input1));
-    int ina = input1 - 'a';
-    int inaa = ina + 20;
-    keyLightByN(inaa, key[ina][0], key[ina][1], key[ina][2]);
-    char input2 = _getch();
-    input2 = (tolower(input2));
-    int inb = input2 - 'a';
-    int inbb = inb + 20;
-    keyLightByN(inbb, key[inb][0], key[inb][1], key[inb][2]);
-    std::cout << (int)ina << std::endl << (int)inb << std::endl;
-    if (key[ina][0] == key[inb][0] && key[ina][1] == key[inb][1] && key[ina][2] == key[inb][2]) {
-        std::cout << "it's same." << std::endl;
-    }
-    else {
-        Sleep(1000);
-        keyLightByN(inaa, 0, 0, 0);
-        keyLightByN(inbb, 0, 0, 0);
-        std::cout << "it's different." << std::endl;
+    int err_cnt = 0;
+    int cur_cnt = 0;
+    while (err_cnt < 5 && cur_cnt<13) {
+        char input1 = _getch();
+        input1 = (tolower(input1));
+        int ina = input1 - 'a';
+        int inaa = ina + 20;
+        keyLightByN(inaa, key[ina][0], key[ina][1], key[ina][2]);
+        char input2 = _getch();
+        input2 = (tolower(input2));
+        int inb = input2 - 'a';
+        int inbb = inb + 20;
+        keyLightByN(inbb, key[inb][0], key[inb][1], key[inb][2]);
+        if (key[ina][0] == key[inb][0] && key[ina][1] == key[inb][1] && key[ina][2] == key[inb][2]) {
+            cur_cnt++;
+            std::cout << "it's same." << std::endl;
+        }
+        else {
+            Sleep(1000);
+            keyLightByN(inaa, 0, 0, 0);
+            keyLightByN(inbb, 0, 0, 0);
+            err_cnt++;
+            keyLightByN(err_cnt + 60, 255, 0, 0);
+            std::cout << "it's different." << std::endl;
+        }
     }
 }
 
