@@ -167,9 +167,9 @@ bool LogitechGame_init() {
 int keyLightByC(char& c, int r = 0, int g = 0, int b = 0) {
     if (keymap.find(c) == keymap.end()) return 1; // out of range
 
-    r = r / 255;
-    g = g / 255;
-    b = b / 255;
+    r = r*100 / 255;
+    g = g*100 / 255;
+    b = b*100 / 255;
 
     LogiLedSetLightingForKeyWithKeyName(keymap[c], r, g, b);
 
@@ -179,9 +179,9 @@ int keyLightByC(char& c, int r = 0, int g = 0, int b = 0) {
 int keyLightByN(int& n, int r = 0, int g = 0, int b = 0) {
     if (keyCode.find(n) == keyCode.end()) return 1; // out of range
 
-    r = r / 255;
-    g = g / 255;
-    b = b / 255;
+    r = r*100 / 255;
+    g = g*100 / 255;
+    b = b*100 / 255;
 
     LogiLedSetLightingForKeyWithKeyName(keyCode[n], r, g, b);
 
@@ -191,9 +191,9 @@ int keyLightByN(int& n, int r = 0, int g = 0, int b = 0) {
 int flashLightByC(char& c, int r = 0, int g = 0, int b = 0, int t = 200) {
     if (keymap.find(c) == keymap.end()) return 1;  // out of range
 
-    r = r / 255;
-    g = g / 255;
-    b = b / 255;
+    r = r*100 / 255;
+    g = g*100 / 255;
+    b = b*100 / 255;
 
     LogiLedFlashSingleKey(keymap[c], r, g, b, LOGI_LED_DURATION_INFINITE, t);
 
@@ -203,9 +203,9 @@ int flashLightByC(char& c, int r = 0, int g = 0, int b = 0, int t = 200) {
 int flashLightByN(int& n, int r = 0, int g = 0, int b = 0, int t = 200) {
     if (keyCode.find(n) == keyCode.end()) return 1; // out of range
 
-    r = r / 255;
-    g = g / 255;
-    b = b / 255;
+    r = r*100 / 255;
+    g = g*100 / 255;
+    b = b*100 / 255;
 
     LogiLedFlashSingleKey(keyCode[n], r, g, b, LOGI_LED_DURATION_INFINITE, t);
 

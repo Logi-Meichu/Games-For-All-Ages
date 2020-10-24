@@ -25,46 +25,12 @@
 
 double rank = 0.0, hit = 0.0, total = 0.0;
 
-/*
-int n_color[9], difficulty;
-std::tuple<int, int, int> colors(int id);
 
-bool valid_num(char c) {
-    return (c <= '9' && c >= '1');
-}
-
-void init() {
-    for (int i = 0; i < 9; i++) {
-        n_color[i] = (i + 1) * 2;
-    }
-    std::make_tuple(100, 0, 0) = colors(0);
-    std::make_tuple(0, 100, 0) = colors(1);
-    std::make_tuple(0, 0, 100) = colors(2);
-    std::make_tuple(100, 100, 0) = colors(3);
-    std::make_tuple(100, 0, 100) = colors(4);
-    std::make_tuple(0, 100, 100) = colors(5);
-    std::make_tuple(100, 100, 100) = colors(6);
-    std::make_tuple(50, 50, 100) = colors(7);
-    std::make_tuple(100, 50, 50) = colors(8);
-}
-
-void select_level() {
-    char input;
-    init();
-    while (input = _getch()) {
-        if (valid_num(input)) {
-            difficulty = (int)input - '1';
-            random_color(n_color[difficulty]);
-            return;
-        }
-    }
-}
-*/
 
 int n_color[9], difficulty;
-int rr[10] = { 100, 0, 0, 100, 100, 0, 100, 50, 100, 50 };
-int gg[10] = { 0, 100, 0, 100, 0, 100, 100, 50, 50, 100 };
-int bb[10] = { 0, 0, 100, 0, 100, 100, 100, 100, 50, 50 };
+int rr[10] = { 255, 0, 0, 255, 255, 0, 255, 125, 255, 125 };
+int gg[10] = { 0, 255, 0, 255, 0, 255, 255, 125, 125, 255 };
+int bb[10] = { 0, 0, 255, 0, 255, 255, 255, 255, 125, 125 };
 
 void init() {
     for (int i = 0; i < 9; i++) {
@@ -77,20 +43,15 @@ void random_color() {
     int arr[26] = { 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
                     30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
                     40, 41, 42, 43, 44, 45};
-    
     std::random_shuffle(arr, arr+26);
-    //for (int i = 0; i < 26; i++) {
-    //    std::cout << arr[i] << std::endl;
-    //}
     for (int i = 0; i < 26; i=i+2) {
         int cc = rand() % 10;
-        //std::cout << cc << std::endl;
         r = rr[cc];
         g = gg[cc];
         b = bb[cc];
-        //std::tie(r,g,b) = colors[color];
         std::cout << r << " " << g << " " << b  << " " << arr[i] << " & " << arr[i+1] << std::endl;
         keyLightByN(arr[i], r, g, b);
+        
         keyLightByN(arr[i + 1], r, g, b);
     }
 }
@@ -242,15 +203,9 @@ void Beats_Lighting(std::string Music) {
 int _tmain(int argc, _TCHAR* argv[])
 {
     // Initialize the LED SDK
-    bool LedInitialized = LogiLedInitWithName("SetTargetZone Sample C++");
 
-    if (!LedInitialized)
-    {
-        std::cout << "Starting failed." << std::endl;
-        
-        return 0;
-    }
-    init_keymap();
+    LogitechGame_init();
+
 
     std::cout << "Start" << std::endl;
     
