@@ -20,7 +20,7 @@
 // music
 #include <windows.h>
 #include <mmsystem.h>
-
+#include "dinosaur.cpp"
 
 
 double rank = 0.0, hit = 0.0, total = 0.0;

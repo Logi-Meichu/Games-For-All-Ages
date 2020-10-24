@@ -1,2 +1,4 @@
 D:\SystemFileDirectory\Desktop\hackathon\dinosaur\Debug\dinosaur.exe
 D:\SystemFileDirectory\Desktop\hackathon\dinosaur\Debug\dinosaur.pdb
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\dinosaur\Debug\dinosaur.exe
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\dinosaur\Debug\dinosaur.pdb

@@ -165,13 +165,14 @@ bool LogitechGame_init() {
 }
 
 int keyLightByC(char& c, int r = 0, int g = 0, int b = 0) {
-    if (keymap.find(c) == keymap.end()) return 1; // out of range
+    char cc = tolower(c);
+    if (keymap.find(cc) == keymap.end()) return 1; // out of range
 
     r = r*100 / 255;
     g = g*100 / 255;
     b = b*100 / 255;
 
-    LogiLedSetLightingForKeyWithKeyName(keymap[c], r, g, b);
+    LogiLedSetLightingForKeyWithKeyName(keymap[cc], r, g, b);
 
     return 0;
 }

@@ -1,3 +1,4 @@
 ﻿  Source.cpp
-D:\SystemFileDirectory\Desktop\hackathon\dinosaur\Source.cpp(73,9): warning C4101: 'i': 未參考的區域變數
-  dinosaur.vcxproj -> D:\SystemFileDirectory\Desktop\hackathon\dinosaur\Debug\dinosaur.exe
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\dinosaur\Source.cpp(73,9): warning C4101: 'i': 未參考的區域變數
+  LINK : 最後的累加連結找不到或未建置 D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\dinosaur\Debug\dinosaur.exe，正在執行完整連結
+  dinosaur.vcxproj -> D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\dinosaur\Debug\dinosaur.exe

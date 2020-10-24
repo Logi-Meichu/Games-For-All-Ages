@@ -1,4 +1,5 @@
 ﻿  Logi_SetTargetZone_Sample_CPP.cpp
+<<<<<<< Updated upstream
 C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(41,15): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
 C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(164,83): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
 C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(170,21): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
@@ -12,3 +13,171 @@ C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sampl
     0 functions had inline decision re-evaluated but remain unchanged
   已完成程式碼產生
   Logi_SetTargetZone_Sample_CPP.vcxproj -> C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\x64\Release\Logi_SetTargetZone_Sample_CPP.exe
+=======
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(47,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(48,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(49,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(50,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(51,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(52,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(53,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(54,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(55,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(56,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(57,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(58,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(59,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(60,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(61,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(62,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(63,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(64,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(65,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(66,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(68,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(68,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(69,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(69,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(70,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(71,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(71,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(72,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(72,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(73,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(73,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(74,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(74,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(75,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(75,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(76,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(76,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(77,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(77,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(85,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(86,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(87,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(88,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(89,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(90,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(91,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(92,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(93,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(94,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(95,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(96,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(97,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(98,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(99,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(100,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(101,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(102,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(103,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(104,34): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(105,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(105,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(106,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(106,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(107,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(107,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(108,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(108,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(109,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(109,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(110,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(110,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(111,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(111,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(112,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(112,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(113,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(113,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(114,48): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(114,77): error C2664: 'int keyLightByN(int &,int,int,int)': 無法將引數 1 從 'int' 轉換為 'int &'
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\LogitechGame.cpp(180,5): message : 請參閱 'keyLightByN' 的宣告
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(35,6): error C2084: 函式 'void init(void)' 的主體已經被宣告了
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\dinosaur.cpp(15): message : 請參閱 'init' 之前的定義
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(41,15): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(135,83): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(141,21): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(147,26): warning C4244: '引數': 將 'double' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(172,17): warning C4244: '引數': 將 'float' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失
+D:\SystemFileDirectory\Desktop\hackathon\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(198,23): warning C4244: '引數': 將 'float' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失
+>>>>>>> Stashed changes
