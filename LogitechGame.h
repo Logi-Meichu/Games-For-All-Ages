@@ -13,12 +13,12 @@ void init_keymap();
 void init_keyCode();
 
 // Light control
-int keyLightByC(char& c, int r = 0, int g = 0, int b = 0);
-int keyLightByN( int& n, int r = 0, int g = 0, int b = 0);
+int keyLightByC(char& c, int r, int g, int b);
+int keyLightByN( int& n, int r, int g, int b);
  
 // flash control
-int flashLightByC(char& c, int r = 0, int g = 0, int b = 0, int t = 200);
-int flashLightByN( int& n, int r = 0, int g = 0, int b = 0, int t = 200);
+int flashLightByC(char& c, int r, int g, int b, int t);
+int flashLightByN( int& n, int r, int g, int b, int t);
 
 int flashStopByN(int& n);
 int flashStopByC(char& c);
