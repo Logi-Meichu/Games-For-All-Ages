@@ -1,13 +1,9 @@
 #include "stdafx.h"
 #include "LogitechLEDLib.h"
-
-#include <conio.h>
+#include "LogitechGame.cpp"
 
 #include <map>
-
 #include <string.h>
-#include <time.h>
-
 using namespace std;
 
 std::map<char, LogiLed::KeyName> keymap;
@@ -199,7 +195,7 @@ int flashLightByC(char& c, int r = 0, int g = 0, int b = 0, int t = 200) {
     g = g / 255;
     b = b / 255;
 
-    LogiLedFlashSingleKey(keymap[c], r, g, b, LogiLed::LOGI_LED_DURATION_INFINITE, t);
+    LogiLedFlashSingleKey(keymap[c], r, g, b, LOGI_LED_DURATION_INFINITE, t);
 
     return 0;
 }
@@ -211,7 +207,7 @@ int flashLightByN(int& n, int r = 0, int g = 0, int b = 0, int t = 200) {
     g = g / 255;
     b = b / 255;
 
-    LogiLedFlashSingleKey(keyCode[n], r, g, b, LogiLed::LOGI_LED_DURATION_INFINITE, t);
+    LogiLedFlashSingleKey(keyCode[n], r, g, b, LOGI_LED_DURATION_INFINITE, t);
 
     return 0;
 }
