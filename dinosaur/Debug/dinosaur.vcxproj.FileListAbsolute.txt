@@ -1,0 +1,2 @@
+D:\SystemFileDirectory\Desktop\hackathon\dinosaur\Debug\dinosaur.exe
+D:\SystemFileDirectory\Desktop\hackathon\dinosaur\Debug\dinosaur.pdb
