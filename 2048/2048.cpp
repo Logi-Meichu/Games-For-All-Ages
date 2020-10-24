@@ -5,6 +5,8 @@
 #include <algorithm>
 #include <ctime>
 #include <cstdlib>
+#include "stdafx.h"
+#include "LogitechLEDLib.h"
 
 using namespace std;
 
@@ -188,6 +190,9 @@ bool add_one(){
 }
 
 int main(int argc,char *argv[]){
+    // Initialize the LED SDK
+    bool LedInitialized = LogiLedInitWithName("SetTargetZone Sample C++");
+
     srand(time(0));
     init();
     int i,j;

@@ -1,4 +1,4 @@
-#include "stdafx.h"
+//#include "stdafx.h"
 #include <iostream>
 #include <vector>
 #include <cstdlib>
@@ -12,7 +12,7 @@ using namespace std;
 vector<int> obstacle;
 int dinosaur_jump = 0;
 
-void init() {
+void din_init() {
     int i;
     for (i = 0; i < 8; i++) {
         obstacle.push_back(0);
@@ -29,13 +29,6 @@ void next_frame() {
         obstacle.push_back(1);
     else
         obstacle.push_back(0);
-}
-
-void print_map() {
-    int i;
-    for (i = 0; i < 10; i++) {
-        cout << obstacle[i];
-    }
 }
 
 void draw() {
@@ -133,7 +126,7 @@ void GetKeyPress()
 int din_main() {
     LogitechGame_init();
     thread t(GetKeyPress);
-    init();
+    din_init();
     int i, die=0;
     while (!die) {
         draw();

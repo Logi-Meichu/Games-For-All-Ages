@@ -27,15 +27,15 @@
     <ClInclude Include="LogitechLEDLib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LogitechGame.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Resource Files\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Logi_SetTargetZone_Sample_CPP.cpp">
+      <Filter>Resource Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechGame.cpp">
       <Filter>Resource Files\Source Files</Filter>
     </ClCompile>
   </ItemGroup>

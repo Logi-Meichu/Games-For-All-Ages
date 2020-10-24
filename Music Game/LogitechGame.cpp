@@ -8,8 +8,8 @@
 #include <iostream>
 //using namespace std;
 
-std::unordered_map<char, LogiLed::KeyName> keymap;
-std::unordered_map<int, LogiLed::KeyName> keyCode;
+std::map<char, LogiLed::KeyName> keymap;
+std::map<int, LogiLed::KeyName> keyCode;
 
 void init_keymap() {
 

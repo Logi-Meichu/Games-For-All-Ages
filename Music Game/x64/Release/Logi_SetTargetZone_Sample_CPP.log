@@ -1,14 +1,13 @@
-﻿  Logi_SetTargetZone_Sample_CPP.cpp
-C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(41,15): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
-C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(167,83): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(173,21): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(179,26): warning C4244: '引數': 將 'double' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失
-C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(204,17): warning C4244: '引數': 將 'float' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失
-C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(230,23): warning C4244: '引數': 將 'float' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失
-C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(199,9): warning C4101: 'in_hit': 未參考的區域變數
-  正在產生程式碼
-  2 of 487 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    7 functions had inline decision re-evaluated but remain unchanged
-  已完成程式碼產生
-  Logi_SetTargetZone_Sample_CPP.vcxproj -> C:\Users\psy64\Desktop\2020-Meichu-Hackathon\Music Game\x64\Release\Logi_SetTargetZone_Sample_CPP.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003: 無法執行指定的工作可執行檔 "CL.exe"。System.IO.IOException: 要求的檔案操作無法執行，因為檔案的使用者對應區段在開啟狀態。
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003: 
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003:    於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003:    於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003:    於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003:    於 System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003:    於 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003:    於 System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003:    於 System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003:    於 Microsoft.Build.Utilities.CanonicalTrackedInputFiles.SaveTlog(DependencyFilter includeInTLog)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003:    於 Microsoft.Build.CPPTasks.CL.ComputeOutOfDateSources()
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003:    於 Microsoft.Build.CPPTasks.TrackedVCToolTask.SkipTaskExecution()
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(518,5): error MSB6003:    於 Microsoft.Build.Utilities.ToolTask.Execute()
