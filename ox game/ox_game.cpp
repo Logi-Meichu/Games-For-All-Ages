@@ -66,50 +66,65 @@ bool check_result(){
 int main(){
     init();
     char input;
+    bool has_result=false;
+    check_result();
     while(player){
-        check_result();
         input=getch();
         if(input=='\x1b'){
             break;
         }
-        if(input=='1'&&p[2][0]==0){
+        if(has_result&&input!='0'){
+            check_result();
+        }
+        else if(input=='1'&&p[2][0]==0){
             p[2][0]=player;
             player=3-player;
+            if(check_result()) has_result=true;
         }
         else if(input=='2'&&p[2][1]==0){
             p[2][1]=player;
             player=3-player;
+            if(check_result()) has_result=true;
         }
         else if(input=='3'&&p[2][2]==0){
             p[2][2]=player;
             player=3-player;
+            if(check_result()) has_result=true;
         }
         else if(input=='4'&&p[1][0]==0){
             p[1][0]=player;
             player=3-player;
+            if(check_result()) has_result=true;
         }
         else if(input=='5'&&p[1][1]==0){
             p[1][1]=player;
             player=3-player;
+            if(check_result()) has_result=true;
         }
         else if(input=='6'&&p[1][2]==0){
             p[1][2]=player;
             player=3-player;
+            if(check_result()) has_result=true;
         }
         else if(input=='7'&&p[0][0]==0){
             p[0][0]=player;
             player=3-player;
+            if(check_result()) has_result=true;
         }
         else if(input=='8'&&p[0][1]==0){
             p[0][1]=player;
             player=3-player;
+            if(check_result()) has_result=true;
         }
         else if(input=='9'&&p[0][2]==0){
             p[0][2]=player;
             player=3-player;
+            if(check_result()) has_result=true;
         }
         else if(input=='0'){
             init();
+            has_result=false;
+            check_result();
         }
         else{
             cout << "Invalid input" << endl; 
