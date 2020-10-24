@@ -180,14 +180,14 @@ int keyLightByC(char& c, int r = 0, int g = 0, int b = 0) {
     return 0;
 }
 
-int keyLightByN(int *n, int r = 0, int g = 0, int b = 0) {
+int keyLightByN(int& n, int r = 0, int g = 0, int b = 0) {
     if (keyCode.find(n) == keyCode.end()) return 1; // out of range
 
     r = r / 255;
     g = g / 255;
     b = b / 255;
 
-    LogiLedSetLightingForKeyWithKeyName(keyCode[c], r, g, b);
+    LogiLedSetLightingForKeyWithKeyName(keyCode[n], r, g, b);
 
     return 0;
 }
@@ -211,7 +211,7 @@ int flashLightByN(int& n, int r = 0, int g = 0, int b = 0, int t = 200) {
     g = g / 255;
     b = b / 255;
 
-    LogiLedFlashSingleKey(keymap[c], r, g, b, LogiLed::LOGI_LED_DURATION_INFINITE, t);
+    LogiLedFlashSingleKey(keyCode[n], r, g, b, LogiLed::LOGI_LED_DURATION_INFINITE, t);
 
     return 0;
 }
