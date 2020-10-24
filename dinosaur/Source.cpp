@@ -1,5 +1,5 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 #include <cstdlib>
 #include <ctime>
 #include <thread>
@@ -9,7 +9,6 @@ using namespace std;
 
 vector<int> obstacle;
 int dinosaur_jump = 0;
-int die = 0;
 
 void init() {
     int i;
@@ -59,8 +58,7 @@ void draw() {
 
 void GetKeyPress()
 {
-    //cout << "asdasdas";
-    while (!die) {
+    while (1) {
         int k = _getch();
         if (k == 72) {
             //cout << "up" << endl;
@@ -72,7 +70,7 @@ void GetKeyPress()
 int main() {
     thread t(GetKeyPress);
     init();
-    int i;
+    int i, die=0;
     while (!die) {
         draw();
         if (dinosaur_jump == 0 && obstacle[2] == 1)
@@ -82,7 +80,12 @@ int main() {
         next_frame();
         Sleep(1000);
     }
-    t.join();
+    t.detach();
     cout << "Game Over" << endl;
     return 0;
 }
+
+
+
+
+
