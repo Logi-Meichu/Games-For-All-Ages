@@ -24,6 +24,7 @@
 #include <mmsystem.h>
 
 #include "LogitechGame.cpp"
+#include "ColorGame.cpp"
 #include "ox_game.cpp"
 #include "2048.cpp"
 //#include "ColorGame.h"
@@ -478,11 +479,11 @@ int _tmain(int argc, _TCHAR* argv[])
             LogiLedSetLighting(0, 0, 0);
         }
         
-        //else if (layout_input == '3') {
-        //    ColorGame cg;
-        //    cg.startPlay();
+        else if (layout_input == '3') {
+            ColorGame cg;
+            cg.startPlay();
 
-        //}
+        }
 
 
         // 2048
