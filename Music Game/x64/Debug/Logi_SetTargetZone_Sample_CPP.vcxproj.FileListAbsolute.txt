@@ -1,0 +1,2 @@
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\x64\Debug\Logi_SetTargetZone_Sample_CPP.exe
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\x64\Debug\Logi_SetTargetZone_Sample_CPP.pdb

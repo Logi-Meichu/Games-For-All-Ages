@@ -1,0 +1,15 @@
+﻿  Logi_SetTargetZone_Sample_CPP.cpp
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\2048.cpp(232,25): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\2048.cpp(235,9): warning C4101: 'a': 未參考的區域變數
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\2048.cpp(234,11): warning C4101: 'j': 未參考的區域變數
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\2048.cpp(234,9): warning C4101: 'i': 未參考的區域變數
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(216,15): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(335,83): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(341,21): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(347,26): warning C4244: '引數': 將 'double' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(366,17): warning C4244: '引數': 將 'float' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(392,23): warning C4244: '引數': 將 'float' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(361,9): warning C4101: 'in_hit': 未參考的區域變數
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(437,14): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\Logi_SetTargetZone_Sample_CPP.cpp(202): warning C4715: 'din_main': 不是所有控制路徑都傳回值
+  Logi_SetTargetZone_Sample_CPP.vcxproj -> D:\meichu_hackathon(2020 logi)\2020-Meichu-Hackathon\Music Game\x64\Debug\Logi_SetTargetZone_Sample_CPP.exe

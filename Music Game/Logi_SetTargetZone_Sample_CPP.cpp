@@ -193,12 +193,13 @@ int din_main() {
         keyLightByN(i, 255, 0, 0);
     }
     std::cout << "Game Over" << std::endl;
-    char c;
-    while (c = getchar()) {
-        if (c == 'r')
+    return 0;
+    /*char c;
+    while (c = _getch()) {
+        if (c == '0')
             goto start;
         else return 0;
-    };
+    };*/
 }
 
 void Over_Lighting_Effect(double rank, int r = 0, int g = 100, int b = 0, int time = 2500, int delay = 300) {
@@ -314,7 +315,14 @@ void Create_Beats(std::string Music) {
     Play_Music(MusicAudio);
 
     while (input = _getch()) {
+        if (input == '\x1b') {
+            PlaySound(NULL, 0, 0);
+            break;
+        }
         if (is_word(input)) {
+            
+            LogiLedPulseSingleKey(keymap[input], 255, 130, 0, 0, 0, 0, 1000, 0);
+            
             delta = float(clock() - begin_time) / CLOCKS_PER_SEC;
             if (!ok) {
                 cout << delta << '\n';
@@ -376,6 +384,10 @@ void Beats_Lighting(std::string Music) {
         while(dt <= t){
             if (_kbhit()) {
                 player_hit = _getch();
+                if (player_hit == '\x1b') {
+                    PlaySound(NULL, 0, 0);
+                    return;
+                }
                 if (player_hit == c) {
                     hit += 1;
                     get_input = clock();
@@ -432,12 +444,44 @@ void Filp_Card_Game() {
 }
 
 void Music_Game() {
+
+
+    for (int i = 0; i < 10; i++) {
+        keyLightByN(i, 0, 0, 0);
+    }
+
+    keyLightByN(1, 0, 255, 0);
+    keyLightByN(2, 255, 130, 0); 
+    keyLightByN(3, 255, 0, 0);
+
     int game_over_led_time_ms = 3000, game_over_led_flash_delay = 300;
-    Beats_Lighting("cytus");
-    int rank = hit / total;
-    //printf("hit: %lf%%\n", rank*100);
-    Show_Rank(rank);
-    Over_Lighting_Effect(rank, 255, 0, 0, game_over_led_time_ms, game_over_led_flash_delay);
+    
+    char mode = _getch();
+    while (mode = _getch()) {
+        keyLightByN(1, 0, 0, 0);
+        keyLightByN(2, 0, 0, 0);
+        keyLightByN(3, 0, 0, 0);
+
+        if (mode == '1') {
+            Beats_Lighting("ICE");
+            float rank = hit / total;
+            printf("hit: %.2f%%\n", rank*100);
+            Show_Rank(rank);
+            //Over_Lighting_Effect(rank, 255, 0, 0, game_over_led_time_ms, game_over_led_flash_delay);
+            for (int i = 61; i <= 72; i++) {
+                keyLightByN(i, 0, 0, 0);
+            }
+        }
+        else if (mode == '2') {
+            Create_Beats("ICE");
+        }
+        else if (mode == '3') break;
+
+        keyLightByN(1, 0, 255, 0);
+        keyLightByN(2, 255, 130, 0);
+        keyLightByN(3, 255, 0, 0);
+    }
+    
     success_end = true;
 }
 
@@ -458,7 +502,7 @@ int _tmain(int argc, _TCHAR* argv[])
     std::cout << "Start" << std::endl;
     
     char layout_input;
-    for (int i = 1; i <= 5; i++) {
+    for (int i = 1; i <= 6; i++) {
         keyLightByN(i, 255, 255, 255);
     }
     while (layout_input = _getch()) {
@@ -467,33 +511,46 @@ int _tmain(int argc, _TCHAR* argv[])
         if(layout_input == '\x1b') break;
 
 
-        // OOXX
+        // Color mixer
         if (layout_input == '1') {
-            OOXX_Game();
+            ColorGame cg;
+            cg.startPlay();
+            
         }
         
-        // Card
+        // OOXX
         else if (layout_input == '2') {
+            OOXX_Game();
+            
+        }
+        
+        // 2048
+        else if (layout_input == '3') {
+            LogiLedSetLighting(0, 0, 0);
+            _2048_Game();
+        }
+
+        // Card
+        else if (layout_input == '4') {
             Filp_Card_Game();
             Sleep(3000);
             LogiLedSetLighting(0, 0, 0);
         }
-        
-        else if (layout_input == '3') {
-            ColorGame cg;
-            cg.startPlay();
 
-        }
-
-
-        // 2048
-        else if (layout_input == '4') {
+        // Dinorsour
+        else if (layout_input == '5') {
+            Dinorsour_Game();
+            Sleep(1000);
             LogiLedSetLighting(0, 0, 0);
-            _2048_Game();
         }
+
+        else if (layout_input == '6') {
+            Music_Game();
+        }
+        
         
         Sleep(200);
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 6; i++) {
             keyLightByN(i, 255, 255, 255);
         }
         //LogiLedShutdown();
