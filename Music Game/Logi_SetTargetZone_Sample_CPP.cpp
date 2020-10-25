@@ -64,48 +64,48 @@ void draw(int leg) {
     if (!dinosaur_jump) {
         std::cout << "0000000000" << std::endl;
         std::cout << "0020000000" << std::endl;
-        keyLightByN(1, 0, 0, 255);
-        keyLightByN(2, 0, 0, 255);
-        keyLightByN(3, 0, 0, 255);
-        keyLightByN(4, 0, 0, 255);
-        keyLightByN(5, 0, 0, 255);
-        keyLightByN(6, 0, 0, 255);
-        keyLightByN(7, 0, 0, 255);
-        keyLightByN(8, 0, 0, 255);
-        keyLightByN(9, 0, 0, 255);
-        keyLightByN(0, 0, 0, 255);
-        keyLightByN(36, 0, 0, 255);
-        keyLightByN(42, 0, 0, 255);
-        leg ? keyLightByN(24, 255, 0, 0) : keyLightByN(24, 0, 0, 255);
+        keyLightByN(1, 0, 169, 224);
+        keyLightByN(2, 0, 169, 224);
+        keyLightByN(3, 0, 169, 224);
+        keyLightByN(4, 0, 169, 224);
+        keyLightByN(5, 0, 169, 224);
+        keyLightByN(6, 0, 169, 224);
+        keyLightByN(7, 0, 169, 224);
+        keyLightByN(8, 0, 169, 224);
+        keyLightByN(9, 0, 169, 224);
+        keyLightByN(0, 0, 169, 224);
+        keyLightByN(36, 0, 169, 224);
+        keyLightByN(42, 0, 169, 224);
+        leg ? keyLightByN(24, 255, 0, 0) : keyLightByN(24, 0, 169, 224);
         keyLightByN(37, 255, 0, 0);
-        !leg ? keyLightByN(39, 255, 0, 0) : keyLightByN(39, 0, 0, 255);
-        keyLightByN(44, 0, 0, 255);
-        keyLightByN(40, 0, 0, 255);
-        keyLightByN(28, 0, 0, 255);
-        keyLightByN(34, 0, 0, 255);
-        keyLightByN(35, 0, 0, 255);
-        keyLightByN(20, 0, 0, 255);
-        keyLightByN(38, 0, 0, 255);
+        !leg ? keyLightByN(39, 255, 0, 0) : keyLightByN(39, 0, 169, 224);
+        keyLightByN(44, 0, 169, 224);
+        keyLightByN(40, 0, 169, 224);
+        keyLightByN(28, 0, 169, 224);
+        keyLightByN(34, 0, 169, 224);
+        keyLightByN(35, 0, 169, 224);
+        keyLightByN(20, 0, 169, 224);
+        keyLightByN(38, 0, 169, 224);
         keyLightByN(23, 255, 0, 0);
-        keyLightByN(25, 0, 0, 255);
-        keyLightByN(26, 0, 0, 255);
-        keyLightByN(27, 0, 0, 255);
-        keyLightByN(29, 0, 0, 255);
-        keyLightByN(30, 0, 0, 255);
-        keyLightByN(31, 0, 0, 255);
-        keyLightByN(55, 0, 0, 255);
+        keyLightByN(25, 0, 169, 224);
+        keyLightByN(26, 0, 169, 224);
+        keyLightByN(27, 0, 169, 224);
+        keyLightByN(29, 0, 169, 224);
+        keyLightByN(30, 0, 169, 224);
+        keyLightByN(31, 0, 169, 224);
+        keyLightByN(55, 0, 169, 224);
         std::cout << obstacle[0] << obstacle[1] << "2";
-        obstacle[0] ? keyLightByN(45, 0, 255, 0) : keyLightByN(45, 0, 0, 255);
+        obstacle[0] ? keyLightByN(45, 0, 255, 0) : keyLightByN(45, 0, 169, 224);
         //obstacle[1] ? keyLightByN(43, 0, 255, 0) : keyLightByN(43, 0, 0, 255);
-        !leg ? keyLightByN(43, 255, 0, 0) : obstacle[1] ? keyLightByN(43, 0, 255, 0) : keyLightByN(43, 0, 0, 255);
-        leg ? keyLightByN(22, 255, 0, 0) : obstacle[2] ? keyLightByN(22, 0, 255 , 0) : keyLightByN(22, 0, 0, 255);
-        obstacle[3] ? keyLightByN(41, 0, 255, 0) : keyLightByN(41, 0, 0, 255);
-        obstacle[4] ? keyLightByN(21, 0, 255, 0) : keyLightByN(21, 0, 0, 255);
-        obstacle[5] ? keyLightByN(33, 0, 255, 0) : keyLightByN(33, 0, 0, 255);
-        obstacle[6] ? keyLightByN(32, 0, 255, 0) : keyLightByN(32, 0, 0, 255);
-        obstacle[7] ? keyLightByN(57, 0, 255, 0) : keyLightByN(57, 0, 0, 255);
-        obstacle[8] ? keyLightByN(58, 0, 255, 0) : keyLightByN(58, 0, 0, 255);
-        obstacle[9] ? keyLightByN(59, 0, 255, 0) : keyLightByN(59, 0, 0, 255);
+        !leg ? keyLightByN(43, 255, 0, 0) : obstacle[1] ? keyLightByN(43, 0, 255, 0) : keyLightByN(43, 0, 169, 224);
+        leg ? keyLightByN(22, 255, 0, 0) : obstacle[2] ? keyLightByN(22, 0, 255 , 0) : keyLightByN(22, 0, 169, 224);
+        obstacle[3] ? keyLightByN(41, 0, 255, 0) : keyLightByN(41, 0, 169, 224);
+        obstacle[4] ? keyLightByN(21, 0, 255, 0) : keyLightByN(21, 0, 169, 224);
+        obstacle[5] ? keyLightByN(33, 0, 255, 0) : keyLightByN(33, 0, 169, 224);
+        obstacle[6] ? keyLightByN(32, 0, 255, 0) : keyLightByN(32, 0, 169, 224);
+        obstacle[7] ? keyLightByN(57, 0, 255, 0) : keyLightByN(57, 0, 169, 224);
+        obstacle[8] ? keyLightByN(58, 0, 255, 0) : keyLightByN(58, 0, 169, 224);
+        obstacle[9] ? keyLightByN(59, 0, 255, 0) : keyLightByN(59, 0, 169, 224);
         for (i = 3; i < 10; i++)
             std::cout << obstacle[i];
         std::cout << std::endl;
@@ -113,46 +113,46 @@ void draw(int leg) {
     else {
         std::cout << "0020000000" << std::endl;
         std::cout << "0020000000" << std::endl;
-        keyLightByN(1, 0, 0, 255);
-        keyLightByN(2, 0, 0, 255);
+        keyLightByN(1, 0, 169, 224);
+        keyLightByN(2, 0, 169, 224);
         keyLightByN(3, 255, 0, 0);
         keyLightByN(4, 255, 0, 0);
-        keyLightByN(5, 0, 0, 255);
-        keyLightByN(6, 0, 0, 255);
-        keyLightByN(7, 0, 0, 255);
-        keyLightByN(8, 0, 0, 255);
-        keyLightByN(9, 0, 0, 255);
-        keyLightByN(0, 0, 0, 255);
-        keyLightByN(36, 0, 0, 255);
-        keyLightByN(42, 0, 0, 255);
+        keyLightByN(5, 0, 169, 224);
+        keyLightByN(6, 0, 169, 224);
+        keyLightByN(7, 0, 169, 224);
+        keyLightByN(8, 0, 169, 224);
+        keyLightByN(9, 0, 169, 224);
+        keyLightByN(0, 0, 169, 224);
+        keyLightByN(36, 0, 169, 224);
+        keyLightByN(42, 0, 169, 224);
         keyLightByN(24, 255, 0, 0);
-        keyLightByN(37, 0, 0, 255);
-        keyLightByN(39, 0, 0, 255);
-        keyLightByN(44, 0, 0, 255);
-        keyLightByN(40, 0, 0, 255);
-        keyLightByN(28, 0, 0, 255);
-        keyLightByN(34, 0, 0, 255);
-        keyLightByN(35, 0, 0, 255);
-        keyLightByN(20, 0, 0, 255);
-        keyLightByN(38, 0, 0, 255);
+        keyLightByN(37, 0, 169, 224);
+        keyLightByN(39, 0, 169, 224);
+        keyLightByN(44, 0, 169, 224);
+        keyLightByN(40, 0, 169, 224);
+        keyLightByN(28, 0, 169, 224);
+        keyLightByN(34, 0, 169, 224);
+        keyLightByN(35, 0, 169, 224);
+        keyLightByN(20, 0, 169, 224);
+        keyLightByN(38, 0, 169, 224);
         keyLightByN(23, 255, 0, 0);
-        keyLightByN(25, 0, 0, 255);
-        keyLightByN(26, 0, 0, 255);
-        keyLightByN(27, 0, 0, 255);
-        keyLightByN(29, 0, 0, 255);
-        keyLightByN(30, 0, 0, 255);
-        keyLightByN(31, 0, 0, 255);
-        keyLightByN(55, 0, 0, 255);
-        obstacle[0] ? keyLightByN(45, 0, 255, 0) : keyLightByN(45, 0, 0, 255);
-        obstacle[1] ? keyLightByN(43, 0, 255, 0) : keyLightByN(43, 0, 0, 255);
-        obstacle[2] ? keyLightByN(22, 0, 255, 0) : keyLightByN(22, 0, 0, 255);
-        obstacle[3] ? keyLightByN(41, 0, 255, 0) : keyLightByN(41, 0, 0, 255);
-        obstacle[4] ? keyLightByN(21, 0, 255, 0) : keyLightByN(21, 0, 0, 255);
-        obstacle[5] ? keyLightByN(33, 0, 255, 0) : keyLightByN(33, 0, 0, 255);
-        obstacle[6] ? keyLightByN(32, 0, 255, 0) : keyLightByN(32, 0, 0, 255);
-        obstacle[7] ? keyLightByN(57, 0, 255, 0) : keyLightByN(57, 0, 0, 255);
-        obstacle[8] ? keyLightByN(58, 0, 255, 0) : keyLightByN(58, 0, 0, 255);
-        obstacle[9] ? keyLightByN(59, 0, 255, 0) : keyLightByN(59, 0, 0, 255);
+        keyLightByN(25, 0, 169, 224);
+        keyLightByN(26, 0, 169, 224);
+        keyLightByN(27, 0, 169, 224);
+        keyLightByN(29, 0, 169, 224);
+        keyLightByN(30, 0, 169, 224);
+        keyLightByN(31, 0, 169, 224);
+        keyLightByN(55, 0, 169, 224);
+        obstacle[0] ? keyLightByN(45, 0, 255, 0) : keyLightByN(45, 0, 169, 224);
+        obstacle[1] ? keyLightByN(43, 0, 255, 0) : keyLightByN(43, 0, 169, 224);
+        obstacle[2] ? keyLightByN(22, 0, 255, 0) : keyLightByN(22, 0, 169, 224);
+        obstacle[3] ? keyLightByN(41, 0, 255, 0) : keyLightByN(41, 0, 169, 224);
+        obstacle[4] ? keyLightByN(21, 0, 255, 0) : keyLightByN(21, 0, 169, 224);
+        obstacle[5] ? keyLightByN(33, 0, 255, 0) : keyLightByN(33, 0, 169, 224);
+        obstacle[6] ? keyLightByN(32, 0, 255, 0) : keyLightByN(32, 0, 169, 224);
+        obstacle[7] ? keyLightByN(57, 0, 255, 0) : keyLightByN(57, 0, 169, 224);
+        obstacle[8] ? keyLightByN(58, 0, 255, 0) : keyLightByN(58, 0, 169, 224);
+        obstacle[9] ? keyLightByN(59, 0, 255, 0) : keyLightByN(59, 0, 169, 224);
         for (i = 0; i < 10; i++)
             std::cout << obstacle[i];
         std::cout << std::endl;
@@ -160,23 +160,26 @@ void draw(int leg) {
 
 }
 
+int die = 0;
 void GetKeyPress()
 {
-    while (1) {
+    while (!die) {
+        if (die) return;
         int k = _getch();
         if (k == 72) {
-            //cout << "up" << endl;
             dinosaur_jump = 1;
         }
     }
 }
 
+
 int din_main() {
-    start:
+start:
+    die = 0;
     LogitechGame_init();
-    std::thread t(GetKeyPress);
+    std::thread t(&GetKeyPress);
     din_init();
-    int i, die = 0, leg=0;
+    int i, leg=0;
     while (!die) {
         draw(leg);
         if (dinosaur_jump == 0 && obstacle[2] == 1)
@@ -186,7 +189,7 @@ int din_main() {
         dinosaur_jump = 0;
         std::cout << std::endl;
         next_frame();
-        Sleep(500);
+        Sleep(350);
     }
     t.detach();
     for (i = 0; i < 60; i++) {
