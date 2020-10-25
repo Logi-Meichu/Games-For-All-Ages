@@ -361,8 +361,8 @@ void Show_Rank(double percent) {
 }
 
 void Beats_Lighting(std::string Music) {
-    std::string MusicBeat = "./src/" + Music + ".txt";
-    std::string MusicAudio = "./src/" + Music + ".wav";
+    std::string MusicBeat = "D:/2020-Meichu-Hackathon/Music Game/src/" + Music + ".txt";
+    std::string MusicAudio = "D:/2020-Meichu-Hackathon/Music Game/src/" + Music + ".wav";
     const char* in = MusicBeat.c_str();
     std::ifstream cin(in);
     
@@ -459,7 +459,7 @@ void Music_Game() {
 
     int game_over_led_time_ms = 3000, game_over_led_flash_delay = 300;
     
-    char mode = _getch();
+    char mode = ' ';
     while (mode = _getch()) {
         keyLightByN(1, 0, 0, 0);
         keyLightByN(2, 0, 0, 0);
